@@ -5,6 +5,6 @@
 <img src = "app/src/main/res/drawable/shot01.jpg" width = "250">
 </p>
 
-Made using KOTLIN
+Made using KOTLIN ANDROID STUDIO
 
 
