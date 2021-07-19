@@ -4,6 +4,6 @@
 <img src = "app/src/main/res/drawable/shot2.jpg" width = "300">
 </p>
 
-Made using KOTLINzz
+Made using KOTLIN
 
 
