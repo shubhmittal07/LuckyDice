@@ -26,20 +26,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun loadImage(diceImg: ImageView, num:Int)
     {
-        when(num){
-            1 -> diceImg.setImageResource(R.drawable.dice_1)
-            2 -> diceImg.setImageResource(R.drawable.dice_2)
-            3 -> diceImg.setImageResource(R.drawable.dice_3)
-            4 -> diceImg.setImageResource(R.drawable.dice_4)
-            5 -> diceImg.setImageResource(R.drawable.dice_5)
-            6 -> diceImg.setImageResource(R.drawable.dice_6)
+        val drawableResource = when (num) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
         }
-    }
-    private fun winCheck(txt1: TextView,txt2:TextView) {
-        if (txt1.text == txt2.text) {
-            val toast = Toast.makeText(this, "JACKPOT!!!", Toast.LENGTH_SHORT)
-            toast.show()
-        }
+
+        diceImg.setImageResource(drawableResource)
     }
 }
 
